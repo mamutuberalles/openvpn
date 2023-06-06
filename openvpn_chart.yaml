@@ -1,8 +1,0 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: HelmRepository
-metadata:
-  name: openvpn
-  namespace: default
-spec:
-  interval: 30m0s
-  url: http://storage.googleapis.com/kubernetes-charts
