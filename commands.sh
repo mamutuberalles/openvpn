@@ -7,7 +7,7 @@ docker run -v ovpn-example:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient CL
 
 docker run -v ovpn-example:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full CLIENTNAME_pass
 docker run -v ovpn-example:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient CLIENTNAME_pass > CLIENTNAME_pass.ovpn
-
+1
 docker run -v ovpn-example:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://127.0.0.1 -2 -C AES-256-CBC
 docker run -v ovpn-example:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full 2fa_c
 docker run -v ovpn-example:/etc/openvpn --rm -it kylemanna/openvpn ovpn_otp_user 2fa_c
